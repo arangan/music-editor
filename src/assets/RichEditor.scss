@@ -1,0 +1,29 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./siddhanta.ttf);
+  }
+
+.ProseMirror {
+    width: 100%;
+    height: 768px;
+    text-align: left;
+    font-family: 'myFirstFont';
+    font-size: 25px;
+    border:solid 2px yellow;
+    padding-left: 1px;
+}
+.ProseMirror:focus-within {
+    border: solid 2px yellow;
+}
+
+.box {
+    padding:1px 7px 2px 7px;
+    margin-left: -8px;
+    margin-right: -8px;
+    width:500px; height:100px;  
+    border:solid 1px #000;
+    border-color:transparent transparent black transparent;
+    border-radius: 0% 0% 38% 38%;  
+    font-family: 'myFirstFont';
+    font-size: 25px;  
+  }
