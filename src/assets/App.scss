@@ -1,4 +1,19 @@
 body {
-    margin-left: 4%;
-    margin-right: 4%;
+    // margin-left: 4%;
+    // margin-right: 4%;
+    width: 21cm;
+    height: 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;    
   }
+
+.doubleUnderLine {
+  border-style: none none double none;
+  display: inline;
+  align-self: center;
+  padding: 0px;
+}
+
+.h11 {
+  margin:0px
+}
+  

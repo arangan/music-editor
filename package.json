@@ -5,16 +5,32 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
+  "main": "background.js",
   "dependencies": {
     "@tiptap/core": "^2.0.0-beta.86",
+    "@tiptap/extension-heading": "^2.0.0-beta.14",
+    "@tiptap/extension-paragraph": "^2.0.0-beta.15",
+    "@tiptap/extension-table": "^2.0.0-beta.25",
+    "@tiptap/extension-table-cell": "^2.0.0-beta.13",
+    "@tiptap/extension-table-header": "^2.0.0-beta.15",
+    "@tiptap/extension-table-row": "^2.0.0-beta.13",
+    "@tiptap/extension-text-align": "^2.0.0-beta.20",
+    "@tiptap/extension-underline": "^2.0.0-beta.15",
     "@tiptap/starter-kit": "^2.0.0-beta.82",
     "@tiptap/vue-3": "^2.0.0-beta.45",
     "core-js": "^3.6.5",
+    "fs": "0.0.1-security",
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@types/electron-devtools-installer": "^2.2.0",
+    "@types/node": "^16.4.3",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -24,11 +40,14 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "@vue/eslint-config-typescript": "^7.0.0",
+    "electron": "^13.0.0",
+    "electron-devtools-installer": "^3.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^7.0.0",
     "sass": "^1.35.2",
     "sass-loader": "^8.0.2",
-    "typescript": "~4.1.5"
+    "typescript": "~4.1.5",
+    "vue-cli-plugin-electron-builder": "~2.1.1"
   }
 }
